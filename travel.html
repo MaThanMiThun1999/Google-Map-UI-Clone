@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="google map ui">
+    <meta name="keywords" content="HTML,CSS,Tailwind,mathanmithun,google map, gmap">
+    <meta name="author" content="mathanmithun">
+    <title>Google Map UI</title>
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./icons/apple-touch.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    body{
+        font-family: "PT Sans", sans-serif;
+    }
+    </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            main_text:"#565656",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <section class="bg-blue-400">
+    <div class="max-w-md h-screen mx-auto overflow-hidden">
+        <div class="h-screen bg-slate-400 relative">
+            <iframe class="h-screen w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15645.568260850312!2d77.88464373222274!3d11.379044156998823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96191aa62873b%3A0xcbcc6272306596d2!2sTiruchengode%2C%20Tamil%20Nadu%20637211!5e0!3m2!1sen!2sin!4v1709443098935!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="absolute w-full top-0">
+                <div class="mx-auto w-[95%] my-3">
+                    <input class="w-full focus:outline-none z-[0] shadow-[2px_3px_10px_2px_gray] relative font-bold px-10 text-lg py-3 rounded-3xl" placeholder="Search here" type="text" name="" id="">
+                    <div class="absolute z-[1] top-5 ml-3 w-[90%]">
+                        <div class="flex w-[100%] items-center mx-auto justify-between">
+                            <div class="w-[25px]">
+                                <span><img class="h-[40px]" src="./icons/google-maps-2020-icon.svg" alt=""></span>
+                            </div>
+                            <div class="flex w-full justify-end">
+                                <span><img class="cursor-pointer" src="./icons/voice-fill-svgrepo-com.svg" alt=""></span>
+                                <a href="./profile.html"><span><img class="w-[40px] cursor-pointer rounded-full" src="./icons/mathanmithun.jpg" alt=""></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute mt-1 top-[70px]">
+                <div class="flex w-[95%] mx-auto">
+                    <div class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                        <img src="./icons/restaurant.svg" alt="">
+                        <h1 class="font-bold text-main_text">Restaurants</h1>
+                    </div>
+                    <div class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                        <img src="./icons/gas-station.svg" alt="">
+                        <h1 class="font-bold text-main_text">Gas</h1>
+                    </div>
+                    <div class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                        <img src="./icons/car.svg" alt="">
+                        <h1 class="font-bold text-main_text">Parking</h1>
+                    </div>
+                    <div class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                        <img src="./icons/shopping.svg" alt="">
+                        <h1 class="font-bold text-main_text">Shopping</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-[120px] right-3">
+                <img class="bg-white p-2 cursor-pointer rounded-full shadow-[1px_1px_5px_1px_gray]" src="./icons/layers.svg" alt="">
+            </div>
+
+            <div class="absolute bottom-[22rem] right-3">
+                <img class="bg-white cursor-pointer p-2 rounded-full shadow-[1px_1px_5px_1px_gray]" src="./icons/pointer.svg" alt="">
+            </div>
+
+            <div class="absolute bottom-[18.5rem] right-3">
+                <img class="bg-blue-800 cursor-pointer p-2 rounded-xl shadow-[1px_1px_5px_1px_gray]" src="./icons/direction.svg" alt="">
+            </div>
+
+            <div class="absolute flex items-center w-[100%] bottom-[12.4rem] rounded-t-3xl shadow-[-2px_-2px_10px_1px_gray] bg-white">
+                <div class="flex items-center w-[95%] mx-auto justify-between">
+                    <div class="px-3">
+                        <div>
+                            <h1 class="text-lg font-bold pt-4">Home - 3:26 pm</h1>
+                        </div>
+                        <div>
+                            <div class="text-sm flex items-center gap-2 text-main_text py-2">
+                                <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 9.50001H18.68L17.43 6.38001C17.2068 5.82527 16.8228 5.3499 16.3275 5.01492C15.8321 4.67993 15.248 4.50063 14.65 4.50001H8.65C7.95529 4.49802 7.28142 4.7372 6.74342 5.17673C6.20541 5.61625 5.83662 6.22886 5.7 6.91001L5.18 9.50001H5C4.20435 9.50001 3.44129 9.81608 2.87868 10.3787C2.31607 10.9413 2 11.7044 2 12.5V15.5C2 15.7652 2.10536 16.0196 2.29289 16.2071C2.48043 16.3947 2.73478 16.5 3 16.5H4C4 17.2957 4.31607 18.0587 4.87868 18.6213C5.44129 19.1839 6.20435 19.5 7 19.5C7.79565 19.5 8.55871 19.1839 9.12132 18.6213C9.68393 18.0587 10 17.2957 10 16.5H14C14 17.2957 14.3161 18.0587 14.8787 18.6213C15.4413 19.1839 16.2044 19.5 17 19.5C17.7956 19.5 18.5587 19.1839 19.1213 18.6213C19.6839 18.0587 20 17.2957 20 16.5H21C21.2652 16.5 21.5196 16.3947 21.7071 16.2071C21.8946 16.0196 22 15.7652 22 15.5V12.5C22 11.7044 21.6839 10.9413 21.1213 10.3787C20.5587 9.81608 19.7956 9.50001 19 9.50001ZM13 6.50001H14.65C14.8486 6.50181 15.0421 6.56269 15.206 6.67488C15.3698 6.78708 15.4965 6.94552 15.57 7.13001L16.52 9.50001H13V6.50001ZM7.66 7.30001C7.70675 7.07074 7.83242 6.86511 8.01514 6.71894C8.19786 6.57277 8.42605 6.49529 8.66 6.50001H11V9.50001H7.22L7.66 7.30001ZM7 17.5C6.80222 17.5 6.60888 17.4414 6.44443 17.3315C6.27998 17.2216 6.15181 17.0654 6.07612 16.8827C6.00043 16.7 5.98063 16.4989 6.01921 16.3049C6.0578 16.1109 6.15304 15.9328 6.29289 15.7929C6.43275 15.6531 6.61093 15.5578 6.80491 15.5192C6.99889 15.4806 7.19996 15.5004 7.38268 15.5761C7.56541 15.6518 7.72159 15.78 7.83147 15.9444C7.94135 16.1089 8 16.3022 8 16.5C8 16.7652 7.89464 17.0196 7.70711 17.2071C7.51957 17.3947 7.26522 17.5 7 17.5ZM17 17.5C16.8022 17.5 16.6089 17.4414 16.4444 17.3315C16.28 17.2216 16.1518 17.0654 16.0761 16.8827C16.0004 16.7 15.9806 16.4989 16.0192 16.3049C16.0578 16.1109 16.153 15.9328 16.2929 15.7929C16.4327 15.6531 16.6109 15.5578 16.8049 15.5192C16.9989 15.4806 17.2 15.5004 17.3827 15.5761C17.5654 15.6518 17.7216 15.78 17.8315 15.9444C17.9414 16.1089 18 16.3022 18 16.5C18 16.7652 17.8946 17.0196 17.7071 17.2071C17.5196 17.3947 17.2652 17.5 17 17.5ZM20 14.5H19.22C18.9388 14.1907 18.5961 13.9435 18.2138 13.7743C17.8315 13.6052 17.418 13.5178 17 13.5178C16.582 13.5178 16.1685 13.6052 15.7862 13.7743C15.4039 13.9435 15.0612 14.1907 14.78 14.5H9.22C8.93882 14.1907 8.59609 13.9435 8.21378 13.7743C7.83148 13.6052 7.41805 13.5178 7 13.5178C6.58195 13.5178 6.16852 13.6052 5.78622 13.7743C5.40391 13.9435 5.06118 14.1907 4.78 14.5H4V12.5C4 12.2348 4.10536 11.9804 4.29289 11.7929C4.48043 11.6054 4.73478 11.5 5 11.5H19C19.2652 11.5 19.5196 11.6054 19.7071 11.7929C19.8946 11.9804 20 12.2348 20 12.5V14.5Z" fill="#676363"/>
+                                </svg>
+                            </span>
+                            Fastest route now due to traffic</div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <button class="text-blue-800 px-4 border-2 rounded-2xl border-main_text font-bold text-xl">start</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute flex items-center w-[100%] bottom-[7.8rem] bg-white">
+                <div class="flex items-center w-[95%] mx-auto justify-between">
+                    <div class="px-3">
+                        <div>
+                            <h1 class="text-lg font-bold pt-4">Suggested</h1>
+                        </div>
+                        <div>
+                            <div class="text-sm flex items-center gap-2 text-main_text py-2">
+                                <span><svg width="13" height="13" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0282 0C8.71497 0 7.41461 0.258658 6.20135 0.761205C4.9881 1.26375 3.8857 2.00035 2.95712 2.92893C1.08175 4.8043 0.0281864 7.34784 0.0281864 10C0.0194442 12.3091 0.818979 14.5485 2.28819 16.33L0.288186 18.33C0.149429 18.4706 0.0554325 18.6492 0.0180584 18.8432C-0.0193158 19.0372 0.0016069 19.2379 0.0781863 19.42C0.161244 19.5999 0.29589 19.7511 0.465033 19.8544C0.634176 19.9577 0.830187 20.0083 1.02819 20H10.0282C12.6804 20 15.2239 18.9464 17.0993 17.0711C18.9746 15.1957 20.0282 12.6522 20.0282 10C20.0282 7.34784 18.9746 4.8043 17.0993 2.92893C15.2239 1.05357 12.6804 0 10.0282 0ZM10.0282 18H3.43819L4.36819 17.07C4.55444 16.8826 4.65898 16.6292 4.65898 16.365C4.65898 16.1008 4.55444 15.8474 4.36819 15.66C3.05877 14.352 2.24336 12.6305 2.06088 10.7888C1.87839 8.94705 2.34013 7.09901 3.36741 5.55952C4.3947 4.02004 5.92398 2.88436 7.6947 2.34597C9.46543 1.80759 11.368 1.8998 13.0784 2.60691C14.7888 3.31402 16.201 4.59227 17.0746 6.22389C17.9482 7.85551 18.2291 9.73954 17.8693 11.555C17.5096 13.3705 16.5315 15.005 15.1017 16.1802C13.672 17.3554 11.8789 17.9985 10.0282 18ZM13.0282 9H11.0282V7C11.0282 6.73478 10.9228 6.48043 10.7353 6.29289C10.5478 6.10536 10.2934 6 10.0282 6C9.76297 6 9.50862 6.10536 9.32108 6.29289C9.13354 6.48043 9.02819 6.73478 9.02819 7V9H7.02819C6.76297 9 6.50862 9.10536 6.32108 9.29289C6.13354 9.48043 6.02819 9.73478 6.02819 10C6.02819 10.2652 6.13354 10.5196 6.32108 10.7071C6.50862 10.8946 6.76297 11 7.02819 11H9.02819V13C9.02819 13.2652 9.13354 13.5196 9.32108 13.7071C9.50862 13.8946 9.76297 14 10.0282 14C10.2934 14 10.5478 13.8946 10.7353 13.7071C10.9228 13.5196 11.0282 13.2652 11.0282 13V11H13.0282C13.2934 11 13.5478 10.8946 13.7353 10.7071C13.9228 10.5196 14.0282 10.2652 14.0282 10C14.0282 9.73478 13.9228 9.48043 13.7353 9.29289C13.5478 9.10536 13.2934 9 13.0282 9Z" fill="#857D7D"/>
+                                    </svg>
+                            </span>
+                            Driving trips based on your location history</div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <span>
+                            <svg width="25" height="25" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#676363"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>information-circle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2Zm0,40A18,18,0,1,1,42,24,18.1,18.1,0,0,1,24,42Z"></path> <path d="M24,20a2,2,0,0,0-2,2V34a2,2,0,0,0,4,0V22A2,2,0,0,0,24,20Z"></path> <circle cx="24" cy="14" r="2"></circle> </g> </g> </g></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute flex justify-between items-center px-3 py-2 w-[100%] bottom-[4.5rem] bg-white">
+                <div class="p-2 bg-blue-100 rounded-full">
+                    <span class="">
+                        <svg fill="#1E40AF" width="20" height="20" viewBox="0 0 24 24" id="Outline" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>194 restore</title> <path d="M12,6a1,1,0,0,0-1,1v5a1,1,0,0,0,.293.707l3,3a1,1,0,0,0,1.414-1.414L13,11.586V7A1,1,0,0,0,12,6Z M23.812,10.132A12,12,0,0,0,3.578,3.415V1a1,1,0,0,0-2,0V5a2,2,0,0,0,2,2h4a1,1,0,0,0,0-2H4.827a9.99,9.99,0,1,1-2.835,7.878A.982.982,0,0,0,1,12a1.007,1.007,0,0,0-1,1.1,12,12,0,1,0,23.808-2.969Z"></path></g></svg>
+                    </span>
+                </div>
+                <div>
+                    <h1 class="text-black font-bold">Tiruchengode Hills</h1>
+                </div>
+                <div class="p-1 border-2 border-main_text rounded-full">
+                    <span>
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.9999 17V21M6.9999 12.6667V6C6.9999 4.89543 7.89533 4 8.9999 4H14.9999C16.1045 4 16.9999 4.89543 16.9999 6V12.6667L18.9135 15.4308C19.3727 16.094 18.898 17 18.0913 17H5.90847C5.1018 17 4.62711 16.094 5.08627 15.4308L6.9999 12.6667Z" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="absolute flex flex-row justify-center items-center gap-5 bottom-0 w-full mx-auto bg-white py-2">
+                <a href="./index.html"><div class="flex cursor-pointer flex-col justify-center items-center">
+                    <img class=" px-5 py-1 " src="./icons/explore gray.svg" alt="">
+                    <h1 class="font-bold text-main_text">Explore</h1>
+                </div></a>
+                <div class="flex cursor-pointer flex-col justify-center items-center">
+                    <img class="px-3 bg-blue-100 rounded-3xl py-1" src="./icons/car-blue.svg" alt="">
+                    <h1 class="font-bold text-blue-800">Travel</h1>
+                </div>
+                <div class="flex cursor-pointer flex-col justify-center items-center">
+                    <img class="px-3  py-1" src="./icons/save-wishlist-like-favorite-svgrepo-com.svg" alt="">
+                    <h1 class="font-bold text-main_text">Saved</h1>
+                </div>
+                <div class="flex cursor-pointer flex-col justify-center items-center">
+                    <img class="px-3 py-1" src="./icons/plus-circle.svg" alt="">
+                    <h1 class="font-bold text-main_text">Contribute</h1>
+                </div>
+                <div class="flex cursor-pointer flex-col justify-center items-center">
+                    <img class="px-3 py-1" src="./icons/bell-alt-svgrepo-com.svg" alt="">
+                    <h1 class="font-bold text-main_text">Updates</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+</html>

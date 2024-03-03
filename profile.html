@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="google map ui">
+    <meta name="keywords" content="HTML,CSS,Tailwind,mathanmithun,google map, gmap">
+    <meta name="author" content="mathanmithun">
+    <title>Google Map UI</title>
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./icons/apple-touch.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        body {
+            font-family: "PT Sans", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        main_text: "#565656",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="bg-blue-400">
+        <div class="max-w-md h-screen mx-auto overflow-hidden">
+            <div class="h-screen bg-slate-400 relative">
+                <iframe class="h-screen w-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15645.568260850312!2d77.88464373222274!3d11.379044156998823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96191aa62873b%3A0xcbcc6272306596d2!2sTiruchengode%2C%20Tamil%20Nadu%20637211!5e0!3m2!1sen!2sin!4v1709443098935!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="absolute w-full top-0">
+                    <div class="mx-auto w-[95%] my-3">
+                        <input
+                            class="w-full focus:outline-none z-[0] shadow-[2px_3px_10px_2px_gray] relative font-bold px-10 text-lg py-3 rounded-3xl"
+                            placeholder="Search here" type="text" name="" id="">
+                        <div class="absolute z-[1] top-5 ml-3 w-[90%]">
+                            <div class="flex w-[100%] items-center mx-auto justify-between">
+                                <div class="w-[25px]">
+                                    <span><img class="h-[40px]" src="./icons/google-maps-2020-icon.svg" alt=""></span>
+                                </div>
+                                <div class="flex w-full justify-end">
+                                    <span><img class="cursor-pointer" src="./icons/voice-fill-svgrepo-com.svg"
+                                            alt=""></span>
+                                    <span><img class="w-[40px] cursor-pointer rounded-full"
+                                            src="./icons/mathanmithun.jpg" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute mt-1 top-[70px]">
+                    <div class="flex w-[95%] mx-auto">
+                        <div
+                            class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                            <img src="./icons/restaurant.svg" alt="">
+                            <h1 class="font-bold text-main_text">Restaurants</h1>
+                        </div>
+                        <div
+                            class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                            <img src="./icons/gas-station.svg" alt="">
+                            <h1 class="font-bold text-main_text">Gas</h1>
+                        </div>
+                        <div
+                            class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                            <img src="./icons/car.svg" alt="">
+                            <h1 class="font-bold text-main_text">Parking</h1>
+                        </div>
+                        <div
+                            class="flex cursor-pointer shadow-[1px_1px_5px_1px_gray] space-x-1 bg-white mx-1 px-5 py-1 rounded-3xl justify-center items-center">
+                            <img src="./icons/shopping.svg" alt="">
+                            <h1 class="font-bold text-main_text">Shopping</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute top-[120px] right-3">
+                    <img class="bg-white p-2 cursor-pointer rounded-full shadow-[1px_1px_5px_1px_gray]"
+                        src="./icons/layers.svg" alt="">
+                </div>
+
+                <div class="absolute bottom-[9rem] right-3">
+                    <img class="bg-white cursor-pointer p-2 rounded-full shadow-[1px_1px_5px_1px_gray]"
+                        src="./icons/pointer.svg" alt="">
+                </div>
+
+                <div class="absolute bottom-[5.5rem] right-3">
+                    <img class="bg-blue-800 cursor-pointer p-2 rounded-xl shadow-[1px_1px_5px_1px_gray]"
+                        src="./icons/direction.svg" alt="">
+                </div>
+
+                <div
+                    class="absolute flex flex-row justify-center items-center gap-5 bottom-0 w-full mx-auto bg-white py-2">
+                    <div class="flex cursor-pointer flex-col justify-center items-center">
+                        <img class="bg-blue-100 px-5 py-1 rounded-3xl" src="./icons/explore.svg" alt="">
+                        <h1 class="font-bold text-blue-800">Explore</h1>
+                    </div>
+                    <div class="flex cursor-pointer flex-col justify-center items-center">
+                        <img class="px-3 py-1" src="./icons/car-svgrepo-com.svg" alt="">
+                        <h1 class="font-bold text-main_text">Travel</h1>
+                    </div>
+                    <div class="flex cursor-pointer flex-col justify-center items-center">
+                        <img class="px-3 py-1" src="./icons/save-wishlist-like-favorite-svgrepo-com.svg" alt="">
+                        <h1 class="font-bold text-main_text">Saved</h1>
+                    </div>
+                    <div class="flex cursor-pointer flex-col justify-center items-center">
+                        <img class="px-3 py-1" src="./icons/plus-circle.svg" alt="">
+                        <h1 class="font-bold text-main_text">Contribute</h1>
+                    </div>
+                    <div class="flex cursor-pointer flex-col justify-center items-center">
+                        <img class="px-3 py-1" src="./icons/bell-alt-svgrepo-com.svg" alt="">
+                        <h1 class="font-bold text-main_text">Updates</h1>
+                    </div>
+                </div>
+
+                <div class="absolute z-[2] top-0 bottom-0 w-[100%] bg-black/50">
+                    <div class="bg-gray-200 mx-auto w-[90%] my-5 rounded-3xl">
+                        <div class="flex justify-between items-center px-4">
+                            <div class="cursor-pointer">
+                                <a href="./index.html"><img src="./icons/close.svg" alt=""></a>
+                            </div>
+                            <div>
+                                <img class="w-[90%] h-[50px] scale-150" src="./icons/google-logo.svg" alt="">
+                            </div>
+                            <div>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="flex bg-white gap-2 p-2 items-center rounded-t-3xl mx-1">
+                            <a target="_blank" href="https://mathanmithun.neocities.org/mathan_mithun/">
+                                <div>
+                                    <img class="w-[50px] rounded-full" src="./icons/mathanmithun.jpg" alt="">
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://mathanmithun.neocities.org/mathan_mithun/">
+                                <div>
+                                    <h1 class="font-bold">MaThan MiThun</h1>
+                                    <h2 class="font-medium text-main_text">mathanmithun8838@gmail.com</h2>
+                                </div>
+                            </a>
+                            <div>
+                                <!-- <img src="./icons/close.svg" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="flex mx-1 justify-center bg-white gap-2 p-2 pb-5 items-center cursor-pointer">
+                            <h1 class="border px-2 border-main_text rounded-lg font-semibold">Manage your Google Account
+                            </h1>
+                        </div>
+                        <hr class="bg-gray-200 border-2">
+                        <div class="flex mx-1 cursor-pointer bg-white gap-2 py-2 items-center">
+                            <div class="px-5">
+                                <img src="./icons/incognito.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Trun on Icongnito mode</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-white gap-2 py-2 items-center">
+                            <div class="px-5">
+                                <img src="./icons/profile.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Your profile</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-white gap-2 py-2 items-center">
+                            <div class="px-[19px]">
+                                <img src="./icons/timeline.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Your Timeline</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-white gap-2 py-2 items-center">
+                            <div class="px-[19px]">
+                                <img src="./icons/user-star.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Location sharing</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-white gap-2 py-2 items-center">
+                            <div class="px-5">
+                                <img src="./icons/offline.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Offline maps</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-white gap-2 py-2 items-center rounded-b-3xl">
+                            <div class="px-5">
+                                <img src="./icons/shop.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Add your business</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-gray-200 gap-2 py-2 items-center">
+                            <div class="px-5">
+                                <img src="./icons/shield.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Your data in Maps</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-gray-200 gap-2 py-2 items-center">
+                            <div class="px-5">
+                                <img src="./icons/settings.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Settings</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 cursor-pointer bg-gray-200 gap-2 py-2 items-center">
+                            <div class="px-5">
+                                <img src="./icons/help.svg" alt="">
+                            </div>
+                            <div>
+                                <h1 class="font-bold">Help and feedbacks</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 bg-gray-200 rounded-b-3xl justify-center gap-2 py-2 items-center">
+                            <div>
+                                <h1 class="text-main_text text-sm font-medium">Privacy Policy</h1>
+                            </div>
+                            <div class="w-1 h-1 bg-main_text rounded-full">
+                            </div>
+                            <div>
+                                <h1 class="text-main_text text-sm font-medium">Terms of services</h1>
+                            </div>
+                        </div>
+                        <div class="flex mx-1 bg-gray-200  rounded-b-3xl justify-center gap-1 pb-2 items-center">
+                            <div>
+                                <h1 class="text-main_text text-sm font-medium">Get Me In Github</h1>
+                            </div>
+                            <!-- <div class="w-1 h-1 bg-main_text rounded-full">
+                        </div> -->
+                            <a href="https://github.com/MaThanMiThun1999" target="_blank">
+                                <div>
+                                    <h1 class="text-black text-sm font-medium">MaThanMiThun1999</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+</body>
+
+</html>
